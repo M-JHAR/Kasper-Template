@@ -163,7 +163,7 @@ header nav .links ul li a {
   font-size: 0.875rem;
   position: relative;
   z-index: 2;
-  padding: 1.5em 0.5em;
+  padding: 3em 0.5em;
   transition: 0.3s;
 }
 
@@ -243,6 +243,13 @@ header nav .links i {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 2;
+}
+
+@media (max-width: 767px) {
+  .landing .fa-angle-right,
+  .landing .fa-angle-left {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -940,6 +947,7 @@ header nav .links i {
 @media (min-width: 768px) {
   .subscribe .container {
     flex-direction: row;
+    align-items: center;
   }
 }
 /* End Subscribe */
@@ -955,7 +963,6 @@ header nav .links i {
   flex-direction: column;
 }
 .contact .content .info h4 {
-  margin-top: 0;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 1.25rem;
